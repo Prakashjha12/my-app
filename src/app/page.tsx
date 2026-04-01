@@ -19,7 +19,7 @@ export default function Home() {
       <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-4 bg-transparent backdrop-blur-md dark:bg-black/20 rounded-full mt-6 mx-auto w-[90%] max-w-5xl border border-white/10 shadow-[0_20px_50px_rgba(75,35,123,0.3)] animate-blur-fade-in" style={{ animationDelay: '0s' }}>
         <div className="flex items-center gap-3">
           <Image
-            src="/collabwise-logo.png"
+            src="/Collabwise-logo.png"
             alt="CollabWise Logo"
             width={700}
             height={100}
