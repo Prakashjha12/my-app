@@ -21,7 +21,7 @@ export async function submitWaitlist(prevState: any, formData: FormData) {
 
   try {
     const client = await clientPromise;
-    const db = client.db(); // Uses the database name from the connection string or defaults to test
+    const db = client.db();
     const collection = db.collection("waitlist");
 
     const existing = await collection.findOne({ email: parsed.data.email });
@@ -38,7 +38,7 @@ export async function submitWaitlist(prevState: any, formData: FormData) {
     });
 
     return {
-      message: "Successfully joined the collective!",
+      message: "Successfully joined the CollabWise!",
       success: true,
     };
   } catch (error) {
