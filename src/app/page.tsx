@@ -15,18 +15,18 @@ export default function Home() {
       </div>
 
       {/* Navigation Shell */}
-      <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-4 bg-transparent backdrop-blur-md dark:bg-black/20 rounded-full mt-6 mx-auto w-[90%] max-w-5xl border border-white/10 shadow-[0_20px_50px_rgba(75,35,123,0.3)]">
+      <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-4 bg-transparent backdrop-blur-md dark:bg-black/20 rounded-full mt-6 mx-auto w-[90%] max-w-5xl border border-white/10 shadow-[0_20px_50px_rgba(75,35,123,0.3)] animate-blur-fade-in" style={{ animationDelay: '0.1s' }}>
         <div className="text-2xl font-black italic tracking-tighter text-white">
           CollabWise
         </div>
 
-        <button className="px-6 py-2 rounded-full bg-primary text-on-primary text-sm font-bold tracking-tight hover:scale-95 transition-transform duration-300 ease-out">
+        <a href="#email-input" className="px-6 py-2 rounded-full bg-primary text-white text-sm font-bold tracking-tight hover:scale-95 transition-transform duration-300 ease-out inline-block">
           Early Access
-        </button>
+        </a>
       </nav>
 
       {/* Main Canvas */}
-      <main className="relative z-10 min-h-screen flex flex-col items-center justify-center px-6 pt-24 pb-12">
+      <main className="relative z-10 min-h-screen flex flex-col items-center justify-center px-6 pt-24 pb-12 animate-blur-fade-in" style={{ animationDelay: '0.3s' }}>
         {/* Hero Section */}
         <div className="max-w-4xl w-full text-center space-y-12">
           {/* Badge */}
@@ -57,7 +57,7 @@ export default function Home() {
       </main>
 
       {/* Footer Shell */}
-      <footer className="w-full flex flex-col md:flex-row items-center justify-between px-12 py-12 mt-auto bg-black border-t border-white/5 relative z-10 text-white">
+      <footer className="w-full flex flex-col md:flex-row items-center justify-between px-12 py-12 mt-auto bg-black border-t border-white/5 relative z-10 text-white animate-blur-fade-in" style={{ animationDelay: '0.5s' }}>
         <div className="font-[family-name:var(--font-manrope)] uppercase tracking-widest text-[10px] text-gray-500 mb-6 md:mb-0">
           {new Date().getFullYear()} - CollabWise.
         </div>

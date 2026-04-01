@@ -29,6 +29,7 @@ export default function WaitlistForm() {
     <>
       <form action={formAction} className="relative flex items-center p-1 sm:p-2 rounded-full liquid-glass-strong border border-white/10 w-full">
         <input
+          id="email-input"
           name="email"
           className="flex-1 min-w-0 bg-transparent border-none focus:outline-none focus:ring-0 text-white placeholder:text-white/50 px-3 sm:px-4 py-3 sm:py-4 text-sm sm:text-base disabled:opacity-50"
           placeholder="your@email.com"

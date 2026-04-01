@@ -54,6 +54,10 @@
   --font-label: "Manrope", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   color-scheme: dark;
 }
@@ -93,4 +97,21 @@ body {
 
 .no-scrollbar::-webkit-scrollbar {
   display: none;
+}
+
+@keyframes blurFadeIn {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-blur-fade-in {
+  animation: blurFadeIn 1.5s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
