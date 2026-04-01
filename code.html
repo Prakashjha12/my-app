@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CollabWise | Something Significant Is Coming</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,400;1,700;1,900&amp;family=Manrope:wght@200;400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .liquid-glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .liquid-glass-strong {
+            background: rgba(19, 19, 19, 0.6);
+            backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+            border: 1px solid rgba(242, 180, 218, 0.1);
+        }
+        .text-glow {
+            text-shadow: 0 0 30px rgba(242, 180, 218, 0.3);
+        }
+        .bg-glow-orb {
+            background: radial-gradient(circle, #4F2442 0%, transparent 70%);
+            filter: blur(60px);
+            opacity: 0.4;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "outline-variant": "#4f444a",
+                        "surface-container-low": "#1b1b1b",
+                        "secondary-fixed": "#fadaeb",
+                        "on-tertiary-container": "#87a46e",
+                        "on-primary-fixed-variant": "#653756",
+                        "on-secondary": "#3f2a37",
+                        "tertiary-fixed": "#cdecb1",
+                        "primary-fixed-dim": "#f2b4da",
+                        "surface-dim": "#131313",
+                        "surface-container": "#1f1f1f",
+                        "on-surface-variant": "#d3c2c9",
+                        "inverse-surface": "#e2e2e2",
+                        "error": "#ffb4ab",
+                        "on-tertiary-fixed": "#0b2000",
+                        "on-error": "#690005",
+                        "primary-container": "#4f2442",
+                        "on-surface": "#e2e2e2",
+                        "tertiary-fixed-dim": "#b1d097",
+                        "on-error-container": "#ffdad6",
+                        "background": "#131313",
+                        "on-secondary-container": "#cbadbd",
+                        "on-secondary-fixed": "#281622",
+                        "tertiary": "#b1d097",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-primary-fixed": "#330c29",
+                        "secondary": "#ddbecf",
+                        "error-container": "#93000a",
+                        "surface-tint": "#f2b4da",
+                        "secondary-container": "#57404e",
+                        "on-primary": "#4c213f",
+                        "outline": "#9b8d94",
+                        "surface": "#131313",
+                        "surface-container-high": "#2a2a2a",
+                        "surface-container-highest": "#353535",
+                        "surface-bright": "#393939",
+                        "on-primary-container": "#c38aae",
+                        "secondary-fixed-dim": "#ddbecf",
+                        "on-tertiary-fixed-variant": "#344e21",
+                        "on-tertiary": "#1f360d",
+                        "inverse-on-surface": "#303030",
+                        "primary": "#f2b4da",
+                        "on-background": "#e2e2e2",
+                        "surface-variant": "#353535",
+                        "primary-fixed": "#ffd8ed",
+                        "on-secondary-fixed-variant": "#57404e",
+                        "tertiary-container": "#21390f",
+                        "inverse-primary": "#804f6f"
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="font-body text-on-surface">
+<!-- Background Layer -->
+<div class="fixed inset-0 z-0">
+<!-- The HLS Video is handled as a background placeholder or iframe equivalent in pure HTML, assuming the video is the texture -->
+<video autoplay="" class="absolute inset-0 w-full h-full object-cover opacity-60 grayscale scale-110 blur-[2px]" loop="" muted="" playsinline="">
+<source src="https://stream.mux.com/8wrHPCX2dC3msyYU9ObwqNdm00u3ViXvOSHUMRYSEe5Q.m3u8" type="application/x-mpegURL"/>
+<!-- Fallback image -->
+<img class="w-full h-full object-cover" data-alt="abstract flowing dark liquid texture with subtle cinematic lighting and deep shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAmeLLyeJA73sm-MTH3HJ_7QeiYtuWlZEwYzO-O9O4bC4yFZ1-2b_wBx2JUIy7mHgboJOpjPj20_Og6Km1UPkjhgONY_Li8Sb1vldbu9QUVtIWIHs5u6Hp7tyWUG1pHxD6whcOqC9pN5-_Pg7aNBWlzZlNrxCqcc1v4dUJooy7O6VGheGfzUgZJLBHHbj5mFT5lbhxn1T-rURsNWrBzxuF9IrfJdhDgqerq7mOCwVW_YMLvahXU2az3Ro3xUQk9mRgcnNqgA91pHVB"/>
+</video>
+<div class="absolute inset-0 bg-black/80"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-black"></div>
+<!-- Signature Glow Orbs -->
+<div class="absolute top-[20%] left-[-10%] w-[600px] h-[600px] bg-glow-orb"></div>
+<div class="absolute bottom-[-10%] right-[-5%] w-[500px] h-[500px] bg-glow-orb"></div>
+</div>
+<!-- Navigation Shell -->
+<nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-4 bg-transparent backdrop-blur-md dark:bg-black/20 rounded-full mt-6 mx-auto w-[90%] max-w-5xl border border-white/10 shadow-[0_20px_50px_rgba(79,36,66,0.3)]">
+<div class="text-2xl font-black italic tracking-tighter text-white">
+            CollabWise
+        </div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-gray-400 font-medium hover:text-white transition-all duration-500 blur-sm hover:blur-none" href="#">Artists</a>
+<a class="text-gray-400 font-medium hover:text-white transition-all duration-500 blur-sm hover:blur-none" href="#">Philosophy</a>
+<a class="text-gray-400 font-medium hover:text-white transition-all duration-500 blur-sm hover:blur-none" href="#">Join</a>
+</div>
+<button class="px-6 py-2 rounded-full bg-primary text-on-primary text-sm font-bold tracking-tight hover:scale-95 transition-transform duration-300 ease-out">
+            Early Access
+        </button>
+</nav>
+<!-- Main Canvas -->
+<main class="relative z-10 min-h-screen flex flex-col items-center justify-center px-6 pt-24 pb-12">
+<!-- Hero Section -->
+<div class="max-w-4xl w-full text-center space-y-12">
+<!-- Badge -->
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full liquid-glass border border-white/5 animate-pulse">
+<span class="w-1.5 h-1.5 rounded-full bg-primary shadow-[0_0_10px_#f2b4da]"></span>
+<span class="text-[10px] uppercase tracking-[0.2em] font-bold text-on-surface-variant/80">
+                    Now accepting early-access applications.
+                </span>
+</div>
+<!-- Heading -->
+<h1 class="font-headline italic text-7xl md:text-9xl tracking-tight leading-[0.85] text-white">
+                Something <br/>
+<span class="text-primary text-glow">Significant</span> <br/> 
+                Is Coming.
+            </h1>
+<!-- Subtext -->
+<p class="max-w-lg mx-auto text-on-surface-variant/70 text-lg md:text-xl font-light leading-relaxed">
+                The digital stage for modern icons. <br/>
+                Enter your email to join the waitlist.
+            </p>
+<!-- Email Form -->
+<div class="max-w-md mx-auto w-full group">
+<form class="relative flex flex-col md:flex-row items-stretch gap-3 p-2 rounded-xl liquid-glass-strong border border-white/10">
+<input class="flex-1 bg-transparent border-none focus:ring-0 text-white placeholder:text-white/20 px-4 py-4 text-base" placeholder="your@email.com" required="" type="email"/>
+<button class="bg-white text-black font-bold px-8 py-4 rounded-lg hover:bg-primary transition-all duration-500 hover:tracking-widest flex items-center justify-center gap-2" type="submit">
+                        Join the Collective
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</form>
+<div class="mt-4 flex items-center justify-center gap-6 opacity-40">
+<span class="text-[10px] uppercase tracking-widest">Limited Invitations Remaining</span>
+</div>
+</div>
+</div>
+<!-- Featured Artist Bento (Visual Depth) -->
+<div class="mt-32 w-full max-w-6xl grid grid-cols-1 md:grid-cols-12 gap-4">
+<!-- Large Card -->
+<div class="md:col-span-7 h-[450px] relative rounded-xl overflow-hidden group">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-60" data-alt="dramatic stage lighting with silhouettes of a musician performing in a cloud of smoke and deep purple hues" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGEzcwj2xQiopbFdIe_OUhc9qOSV2vmX0HOpA3TXC6IMiZLW0jxLH7F5cByyHPfLNICY1FZhteeygPkqjxNPJu0U7c2EWbsU9zMszL7OEc3GXpIQPOAPy8O-EQAbR8OnlmDK4uEzz4E0gsswcRUGV7uL_w2r1m-pr5CS1JRh9j_QHh5SRdd2oSu4DlE3YFUPNVPCd7dhR4-zGHsXz7McQ7jOyIG-N7yGbqahaPQGeVgMUnxHyE7BdKF8JlaK380UcXyGSlSE-PExNl"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-10">
+<span class="text-[10px] uppercase tracking-[0.3em] text-primary font-bold mb-2 block">Curated Network</span>
+<h3 class="font-headline italic text-4xl text-white">Elevating the Aura.</h3>
+</div>
+</div>
+<!-- Small Detail Card -->
+<div class="md:col-span-5 flex flex-col gap-4">
+<div class="h-1/2 relative rounded-xl overflow-hidden liquid-glass-strong flex flex-col justify-center p-8 border border-white/5">
+<div class="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary" data-weight="fill">verified</span>
+</div>
+<h4 class="text-xl font-bold text-white mb-2">Verified Identity</h4>
+<p class="text-sm text-on-surface-variant/60">A secure sanctuary for high-profile talent and their closest collaborators.</p>
+</div>
+<div class="h-1/2 relative rounded-xl overflow-hidden group">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-50" data-alt="close-up of premium audio hardware studio equipment with soft glowing lights in a dark moody room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXpJMxWrsxf2TBnJ7_X0NMPiSzgG4OlF4VlGORDKTX5o37GvJREr_uiL8weBuFHnjOePc08TyDYGazVvo_eM-11Jxfizr-d-SWx_qnVl8aYUPnkI_cCXvTay38G4WFZ6UDQcuNSouUq5tFtp5ckSY5CtZ59i2aNZG8NKTId2CAfvrOnNpv0o0eUi20R10zCyLfSaiQt74zzdG-Cu6qgnYgUmanRBCVIxi0B9z2wu7y1e1xl2SGLwwKMJpT7Ao_pj-KSqJZRGYx2zDc"/>
+<div class="absolute inset-0 bg-primary-container/20 mix-blend-overlay"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-16 h-16 rounded-full liquid-glass flex items-center justify-center text-white cursor-pointer hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl" data-weight="fill">play_arrow</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer Shell -->
+<footer class="w-full flex flex-col md:flex-row items-center justify-between px-12 py-12 mt-auto bg-black border-t border-white/5">
+<div class="font-['Manrope'] uppercase tracking-widest text-[10px] text-gray-500 mb-6 md:mb-0">
+            © 2024 CollabWise. The Sonic Noir Gallery.
+        </div>
+<div class="flex items-center gap-8">
+<a class="font-['Manrope'] uppercase tracking-widest text-[10px] text-gray-600 hover:text-[#f2b4da] transition-colors duration-300 opacity-80 hover:opacity-100" href="#">Instagram</a>
+<a class="font-['Manrope'] uppercase tracking-widest text-[10px] text-gray-600 hover:text-[#f2b4da] transition-colors duration-300 opacity-80 hover:opacity-100" href="#">Twitter</a>
+<a class="font-['Manrope'] uppercase tracking-widest text-[10px] text-gray-600 hover:text-[#f2b4da] transition-colors duration-300 opacity-80 hover:opacity-100" href="#">Contact</a>
+</div>
+</footer>
+<!-- Decorative Elements -->
+<div class="fixed top-0 left-0 w-full h-screen pointer-events-none z-[1]">
+<!-- Film Grain Overlay -->
+<div class="absolute inset-0 opacity-[0.03] mix-blend-overlay bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
+</div>
+</body></html>
