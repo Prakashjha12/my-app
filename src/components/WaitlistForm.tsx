@@ -17,7 +17,7 @@ export default function WaitlistForm() {
         <div className="bg-primary/20 w-12 h-12 rounded-full flex items-center justify-center mb-4">
           <span className="material-symbols-outlined text-primary text-2xl">check</span>
         </div>
-        <h3 className="text-2xl font-headline italic text-white mb-2">Welcome to the Collective</h3>
+        <h3 className="text-2xl font-headline italic text-white mb-2">Welcome to the CollabWise</h3>
         <p className="text-on-surface-variant/70 text-sm max-w-sm">
           {state.message} We will be in touch soon.
         </p>
@@ -45,7 +45,7 @@ export default function WaitlistForm() {
         >
           {isPending ? "Joining..." : (
             <>
-              <span className="hidden sm:inline">Join the Collective</span>
+              <span className="hidden sm:inline">Join the collabwise</span>
               <span className="inline sm:hidden">Join</span>
               <span className="material-symbols-outlined text-[1rem] sm:text-sm">arrow_forward</span>
             </>
