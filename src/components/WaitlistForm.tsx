@@ -27,11 +27,36 @@ export default function WaitlistForm() {
 
   return (
     <>
-      <form action={formAction} className="relative flex items-center p-1 sm:p-2 rounded-full liquid-glass-strong border border-white/10 w-full">
+      <form action={formAction} className="relative flex flex-col p-4 sm:p-5 rounded-3xl liquid-glass-strong border border-white/10 w-full gap-3 sm:gap-4 max-w-2xl mx-auto">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full">
+          <input
+            id="name-input"
+            name="name"
+            className="w-full sm:w-1/2 min-w-0 bg-white/5 rounded-2xl border-none focus:outline-none focus:ring-0 text-white placeholder:text-white/50 px-4 py-3 sm:py-4 text-sm sm:text-base disabled:opacity-50 transition-colors"
+            placeholder="Your Name"
+            required
+            type="text"
+            aria-label="Name"
+            disabled={isPending}
+          />
+          <select
+            name="category"
+            required
+            aria-label="Category"
+            disabled={isPending}
+            defaultValue=""
+            className="w-full sm:w-1/2 min-w-0 bg-white/5 rounded-2xl border-none focus:outline-none focus:ring-0 text-white/80 [&>option]:text-black px-4 py-3 sm:py-4 text-sm sm:text-base disabled:opacity-50 transition-colors cursor-pointer appearance-none"
+          >
+            <option value="" disabled>Select Category</option>
+            <option value="Influencer/creator">Influencer / Creator</option>
+            <option value="Dj / artist">DJ / Artist</option>
+            <option value="Photographers/cinematographers">Photographers / Cinematographers</option>
+          </select>
+        </div>
         <input
           id="email-input"
           name="email"
-          className="flex-1 min-w-0 bg-transparent border-none focus:outline-none focus:ring-0 text-white placeholder:text-white/50 px-3 sm:px-4 py-3 sm:py-4 text-sm sm:text-base disabled:opacity-50"
+          className="w-full min-w-0 bg-white/5 rounded-2xl border-none focus:outline-none focus:ring-0 text-white placeholder:text-white/50 px-4 py-3 sm:py-4 text-sm sm:text-base disabled:opacity-50 transition-colors"
           placeholder="your@email.com"
           required
           type="email"
@@ -39,14 +64,13 @@ export default function WaitlistForm() {
           disabled={isPending}
         />
         <button
-          className="bg-white text-black font-bold px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-full hover:bg-primary hover:text-white transition-all duration-500 flex items-center justify-center gap-1 sm:gap-2 disabled:opacity-50 shrink-0 text-sm sm:text-base disabled:cursor-wait"
+          className="w-full bg-white text-black font-bold px-4 py-3 sm:py-4 md:py-4 mt-2 rounded-2xl hover:bg-primary hover:text-white transition-all duration-500 flex items-center justify-center gap-2 disabled:opacity-50 shrink-0 text-sm sm:text-base disabled:cursor-wait"
           type="submit"
           disabled={isPending}
         >
           {isPending ? "Joining..." : (
             <>
-              <span className="hidden sm:inline">Join the collabwise</span>
-              <span className="inline sm:hidden">Join</span>
+              <span>Join the collabwise</span>
               <span className="material-symbols-outlined text-[1rem] sm:text-sm">arrow_forward</span>
             </>
           )}

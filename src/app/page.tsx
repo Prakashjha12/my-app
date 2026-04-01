@@ -1,5 +1,6 @@
 import Image from "next/image";
 import WaitlistForm from "@/components/WaitlistForm";
+import SmoothScrollLink from "@/components/SmoothScrollLink";
 
 export default function Home() {
   return (
@@ -15,22 +16,30 @@ export default function Home() {
       </div>
 
       {/* Navigation Shell */}
-      <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-4 bg-transparent backdrop-blur-md dark:bg-black/20 rounded-full mt-6 mx-auto w-[90%] max-w-5xl border border-white/10 shadow-[0_20px_50px_rgba(75,35,123,0.3)] animate-blur-fade-in" style={{ animationDelay: '0.1s' }}>
-        <div className="text-2xl font-black italic tracking-tighter text-white">
-          CollabWise
+      <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-4 bg-transparent backdrop-blur-md dark:bg-black/20 rounded-full mt-6 mx-auto w-[90%] max-w-5xl border border-white/10 shadow-[0_20px_50px_rgba(75,35,123,0.3)] animate-blur-fade-in" style={{ animationDelay: '0s' }}>
+        <div className="flex items-center gap-3">
+          <Image
+            src="/collabwise-logo.png"
+            alt="CollabWise Logo"
+            width={700}
+            height={100}
+
+            className="h-10 md:h-12 w-auto object-contain bg-transparent"
+            priority
+          />
         </div>
 
-        <a href="#email-input" className="px-6 py-2 rounded-full bg-primary text-white text-sm font-bold tracking-tight hover:scale-95 transition-transform duration-300 ease-out inline-block">
+        <SmoothScrollLink href="#email-input" className="px-6 py-2 rounded-full bg-primary text-white text-sm font-bold tracking-tight hover:scale-95 transition-transform duration-300 ease-out inline-block">
           Early Access
-        </a>
+        </SmoothScrollLink>
       </nav>
 
       {/* Main Canvas */}
-      <main className="relative z-10 min-h-screen flex flex-col items-center justify-center px-6 pt-24 pb-12 animate-blur-fade-in" style={{ animationDelay: '0.3s' }}>
+      <main className="relative z-10 min-h-screen flex flex-col items-center justify-center px-6 pt-24 pb-12 animate-blur-fade-in" style={{ animationDelay: '0.1s' }}>
         {/* Hero Section */}
         <div className="max-w-4xl w-full text-center space-y-12">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full liquid-glass border border-white/5 animate-pulse">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 mt-10 rounded-full liquid-glass border border-white/5 animate-pulse">
             <span className="w-1.5 h-1.5 rounded-full bg-primary shadow-[0_0_10px_#4b237b]"></span>
             <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-on-surface-variant/100">
               Now accepting early-access applications.
@@ -44,11 +53,11 @@ export default function Home() {
           </h1>
           {/* Subtext */}
           <p className="max-w-lg mx-auto text-on-surface-variant/70 text-lg md:text-xl font-light leading-relaxed">
-            The digital stage for modern icons. <br />
+            The digital stage for modern icons.
             Enter your email to join the waitlist.
           </p>
           {/* Email Form */}
-          <div className="max-w-md mx-auto w-full group">
+          <div className="max-w-xl mx-auto w-full group">
             <WaitlistForm />
           </div>
         </div>
@@ -57,7 +66,7 @@ export default function Home() {
       </main>
 
       {/* Footer Shell */}
-      <footer className="w-full flex flex-col md:flex-row items-center justify-between px-12 py-12 mt-auto bg-black border-t border-white/5 relative z-10 text-white animate-blur-fade-in" style={{ animationDelay: '0.5s' }}>
+      <footer className="w-full flex flex-col md:flex-row items-center justify-between px-12 py-12 mt-auto bg-black border-t border-white/5 relative z-10 text-white animate-blur-fade-in" style={{ animationDelay: '0.2s' }}>
         <div className="font-[family-name:var(--font-manrope)] uppercase tracking-widest text-[10px] text-gray-500 mb-6 md:mb-0">
           {new Date().getFullYear()} - CollabWise.
         </div>

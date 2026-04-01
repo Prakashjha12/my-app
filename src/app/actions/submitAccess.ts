@@ -3,14 +3,18 @@
 import clientPromise from "@/lib/mongodb";
 import { z } from "zod";
 
-const emailSchema = z.object({
+const formSchema = z.object({
+  name: z.string().min(2, { message: "Name must be at least 2 characters." }),
   email: z.string().email({ message: "Please provide a valid email address." }),
+  category: z.string().min(1, { message: "Please select a category." }),
 });
 
-export async function submitWaitlist(prevState: any, formData: FormData) {
+export async function submitWaitlist(prevState: unknown, formData: FormData) {
+  const name = formData.get("name");
   const email = formData.get("email");
+  const category = formData.get("category");
 
-  const parsed = emailSchema.safeParse({ email });
+  const parsed = formSchema.safeParse({ name, email, category });
 
   if (!parsed.success) {
     return {
@@ -33,7 +37,9 @@ export async function submitWaitlist(prevState: any, formData: FormData) {
     }
 
     await collection.insertOne({
+      name: parsed.data.name,
       email: parsed.data.email,
+      category: parsed.data.category,
       createdAt: new Date(),
     });
 
